@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+        <h3><hr class="line1">Bundle & Save<hr class="line2"></h3>
+    </div>
+    <div id="Box1" onclick="myfunction()">
+        <input type="radio" id="myinput1">
+        <h4 style= "padding-top: 18px; padding-left: 55px;">1 Pair</h4>
+        <h3 style="padding-left: 55px; margin-bottom: 12px;">DKK 195.00</h3>
+        <h3 class="discount1">50% OFF</h3>
+        <div id="hide1">
+        <label style="padding: 55px;">Size</label>
+        <label style="padding: 0px;">Colour</label><br>
+        <label class="nmbr1" >#1</label><br>
+        <label class="nmbr2">#2</label>
+         <select class="size1"> 
+            <option>S</option>
+        </select>
+        <select class="size2">
+            <option>colour</option>
+        </select>
+         <select class="size3"> 
+            <option>S</option>
+        </select>
+        <select class="size4">
+            <option>colour</option>
+        </select>
+    </div>
+    </div>
+    <div id="Box2" onclick="myfunction1()">
+        <input type="radio" id="myinput2" >
+        <h4 style= "padding-top: 12px; padding-left: 55px;">2 Pair</h4>
+        <h3 style="padding-left: 55px; margin-bottom: 12px;">DKK 345.00</h3>
+        <h3 class="discount2">40% OFF</h3>
+        <p class="offer">Most Popular</p>
+        <div id="hide2">
+            <label style="padding: 55px;">Size</label>
+            <label style="padding: 0px;">Colour</label><br>
+            <label class="nmbr3" >#1</label><br>
+            <label class="nmbr4">#2</label>
+             <select class="size5"> 
+                <option>S</option>
+            </select>
+            <select class="size6">
+                <option>colour</option>
+            </select>
+             <select class="size7"> 
+                <option>S</option>
+            </select>
+            <select  class="size8">
+                <option>colour</option>
+            </select>
+        </div>
+    </div>
+    <div id="Box3" onclick="myfunction2()">
+        <input type="radio" id="myinput3" >
+        <h4 style= "padding-top: 12px; padding-left: 55px;">3 Pair</h4>
+        <h3 style="padding-left: 55px; margin-bottom: 12px;">DKK 528.00</h3>
+        <h3 class="discount3">60% OFF</h3>
+        <div id="hide3">
+            <label style="padding: 55px;">Size</label>
+            <label style="padding: 0px;">Colour</label><br>
+            <label class="nmbr5" >#1</label><br>
+            <label class="nmbr6">#2</label>
+             <select class="size9"> 
+                <option>S</option>
+            </select>
+            <select class="size10">
+                <option>colour</option>
+            </select>
+             <select class="size11"> 
+                <option>S</option>
+            </select>
+            <select class="size12">
+                <option>colour</option>
+            </select>
+        </div>
+     </div>
+     <div class="data">
+     <p style="color: #04AA6D; margin-left: 400px;">Free 2 Days Shipping</p>
+     <p class="paragraph1">Total:</p>
+     <p class="paragraph2">DRK 360.00</p>
+    </div >
+    <span><a href="#" >+Add To Cart</a></span>
+  </div>
+  <script>
+    function myfunction() {
+        document.getElementById('hide1').style.display = "block";
+        document.getElementById('hide2').style.display = "none" ;
+        document.getElementById('hide3').style.display = "none" ;
+        document.getElementById('Box2').style.height = "70px";
+        document.getElementById('Box2').style.border = "1px solid gray";
+        document.getElementById('Box2').style.backgroundColor = "white";
+        document.getElementById('Box3').style.backgroundColor = "white";
+        document.getElementById('Box3').style.height = "70px";
+        document.getElementById('Box3').style.border = "1px solid gray";
+        document.getElementById('Box1').style.height = "200px";
+        document.getElementById('Box1').style.border = "3px solid #059862";
+        document.getElementById('Box1').style.backgroundColor = "#f5fbf9";
+    }
+      function myfunction1(){  
+        document.getElementById('hide2').style.display = "block" ;
+        document.getElementById('hide3').style.display = "none" ;
+        document.getElementById('hide1').style.display = "none";
+        document.getElementById('Box2').style.height = "200px";
+        document.getElementById('Box2').style.border = "3px solid #059862";
+        document.getElementById('Box2').style.backgroundColor = "#f5fbf9";
+        document.getElementById('Box3').style.backgroundColor = "white";
+        document.getElementById('Box3').style.border = "1px solid gray";
+        document.getElementById('Box3').style.height = "70px";
+        document.getElementById('Box1').style.backgroundColor = "white";
+        document.getElementById('Box1').style.border = "1px solid gray";
+        document.getElementById('Box1').style.height = "70px";
+      }
+      function myfunction2(){  
+        document.getElementById('hide3').style.display = "block" ;
+        document.getElementById('hide2').style.display = "none" ;
+        document.getElementById('hide1').style.display = "none";
+        document.getElementById('Box3').style.height = "200px";
+        document.getElementById('Box3').style.border = "3px solid #059862";
+        document.getElementById('Box3').style.backgroundColor = "#f5fbf9";
+        document.getElementById('Box1').style.backgroundColor = "white";
+        document.getElementById('Box1').style.border = "1px solid gray";
+        document.getElementById('Box1').style.height = "70px";
+        document.getElementById('Box2').style.backgroundColor = "white";
+        document.getElementById('Box2').style.border = "1px solid gray";
+        document.getElementById('Box2').style.height = "70px";
+      }
+
+  </script>
+</body>
+</html>
